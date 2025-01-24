@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct Resultados: Codable{
+    var results: [Game]
+}
+
+
 // MARK: - Game
 struct Game: Codable,Hashable {
     let title, studio, contentRaiting, publicationYear: String
